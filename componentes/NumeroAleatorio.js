@@ -4,7 +4,9 @@ import React from 'react'
 export default function NumeroAleatorio(props) {
 
     const{min, max} = props
+    
     const delta = max - min
+
     const NumeroAleatorio = Math.floor(Math.random()* delta) + min
 
   return (

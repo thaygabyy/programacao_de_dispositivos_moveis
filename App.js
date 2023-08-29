@@ -1,13 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
-import MinMax from './componentes/MinMax';
+import NumeroAleatorio from './componentes/NumeroAleatorio';
 
 export default function App() {
   return (
     <View style={styles.container}>
       
-      <MinMax min="10" max="20"/>
+      <NumeroAleatorio min={1}  max={60}/>
     </View>
   );
 }
@@ -15,7 +15,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'lightblue',
     alignItems: 'center',
     justifyContent: 'center',
   },
